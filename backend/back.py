@@ -9,7 +9,7 @@ from rasterio.io import MemoryFile
 app = Flask(__name__)
 
 model = tf.keras.models.load_model(
-    r"d:\Study\projects\Flood-Water-Segmentation-Using-Multispectral-Satellite-Data\models\best_keras_model.h5"
+    "../models/best_keras_model.h5"
 )
 
 IMG_SIZE = 128
